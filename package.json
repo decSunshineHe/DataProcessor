@@ -1,0 +1,29 @@
+{
+  "name": "format-factory",
+  "version": "1.0.5",
+  "description": "handle data and adapt to various needs",
+  "main": "dist/format-factory.cjs.js",
+  "module": "dist/format-factory.esm.js",
+  "browser": "format-factory.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup src/index.js -c rollup.config.js",
+    "release": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/decSunshineHe/format-factory.git"
+  },
+  "keywords": [
+    "format-factory"
+  ],
+  "author": "wenjieh",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "rollup": "^2.35.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
